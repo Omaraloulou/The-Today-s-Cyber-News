@@ -17,7 +17,7 @@ import nltk
 nltk.download('punkt')
 
 # Display styled text
-styled_text = pyfiglet.figlet_format("THE TODAY'S CYBER NEWS ", font="5lineoblique")
+styled_text = pyfiglet.figlet_format("THE TODAY'S CYBER NEWS ")
 print(Fore.BLUE + styled_text)
 
 # List of URLs to scrape
