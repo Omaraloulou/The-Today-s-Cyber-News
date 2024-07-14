@@ -20,4 +20,5 @@ Make sure you have the following Python libraries installed:
 - pyfiglet
 - colorama
 - sumy
+- lxml
 - nltk
