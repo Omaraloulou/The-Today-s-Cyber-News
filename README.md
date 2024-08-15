@@ -1,5 +1,5 @@
 # The-Today-s-Cyber-News
-The Cyber News Scraper is a Python script designed to fetch and summarize the latest cybersecurity news from popular websites such as Cybersecurity News, Dark Reading, and Bleeping Computer. It extracts news article titles, links, and summaries using web scraping techniques. The summarized news is compiled into an HTML report (security_news_report.html), which is automatically opened in the default web browser for easy access.
+The Todays Cyber News is a Python script designed to fetch and summarize the latest cybersecurity news from popular websites such as Cybersecurity News, Dark Reading, and Bleeping Computer. It extracts news article titles, links, and summaries using web scraping techniques. The summarized news is compiled into an HTML report (security_news_report.html), which is automatically opened in the default web browser for easy access.
 
 # Overview
 This script scrapes the latest cybersecurity news from the following websites:
