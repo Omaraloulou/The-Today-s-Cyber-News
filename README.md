@@ -5,7 +5,7 @@ The Todays Cyber News is a Python script designed to fetch and summarize the lat
 This script scrapes the latest cybersecurity news from the following websites:
 - Cybersecurity News (https://cybersecuritynews.com/)
 - Dark Reading (https://www.darkreading.com/)
-- Bleeping Computer (https://www.bleepingcomputer.com/)
+
 
 The script fetches news articles, extracts their titles, links, and summaries, and generates an HTML report.
 
