@@ -24,7 +24,6 @@ print(Fore.BLUE + styled_text)
 urls_list = [
     "https://cybersecuritynews.com/",
     "https://www.darkreading.com/",
-    "https://www.bleepingcomputer.com/"
 ]
 
 def get_date():
@@ -71,18 +70,6 @@ def extract_news_darkreading(site):
         link = article.get('href')
         if link and not link.startswith('http'):
             link = f"https://www.darkreading.com{link}"
-        summary = get_article_summary(link)
-        news[title] = (link, summary)
-    return news
-
-# Extract news from bleepingcomputer.com
-def extract_news_bleepingcomputer(site):
-    news = {}
-    articles = site.find_all('div', {'class': 'bc_latest_news'})
-    for article in articles:
-        title = article.find('h4').text.strip()
-        link = article.find('a').get('href')
-        link = f"https://www.bleepingcomputer.com{link}"
         summary = get_article_summary(link)
         news[title] = (link, summary)
     return news
@@ -179,8 +166,6 @@ def main():
             news.update(extract_news_cybersecuritynews(site))
         elif "darkreading.com" in url:
             news.update(extract_news_darkreading(site))
-        elif "bleepingcomputer.com" in url:
-            news.update(extract_news_bleepingcomputer(site))
     save_news_to_html(news)
 
 # Entry point of the script
